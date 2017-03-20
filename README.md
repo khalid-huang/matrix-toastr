@@ -13,19 +13,22 @@
   - matrixToastr.warning
   - matrixToastr.success
 + 具体使用  
-  - matrxiToastr.confirm({
+  - 示例
+    ``` javascript
+    matrxiToastr.confirm({
       content: content,
       title: title, //可选
       yes: function() {}, //点击确认的回调函数
       no: function() {},
       options: options
     });
-  - matrixToastr.info({
+    matrixToastr.info({
       content: content,
       title: title,
       callback: callback,
       options: options
     });
+    ```
   - 其他与info一样
   ### DEMO
   + 具体使用可以参考 demo.html
