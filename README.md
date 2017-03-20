@@ -22,16 +22,16 @@
       'closeDuration' : 100      
     });
     matrxiToastr.confirm({
-      content: content,
-      title: title, //可选
-      yes: function() {}, //点击确认的回调函数
-      no: function() {},
-      optionsOverride: options
+      content: content, //显示内容
+      title: title, //可选，标题
+      yes: function() {}, //点击“是”的回调函数;默认是空函数，不做任何操作;
+      no: function() {},  //点击“否”的回调函数;默认是空函数，不做任何操作；
+      optionsOverride: options //参数设置
     });
     matrixToastr.info({
       content: content,
       title: title,
-      callback: callback,
+      callback: callback,  //可选；用于在调用info之后采取的回调函数
       optionsOverride: options
     });
     ```

@@ -46,7 +46,7 @@ var test1 = function() {
   matrixToastr.confirm({
     content: '你确定这样真的好吗？23333333333333333333333333333333333',
     yes: yes,
-    no: no,
+    // no: no,
     title: '提示',
     optionsOverride: {
       closeButton: true

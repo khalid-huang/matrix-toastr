@@ -78,8 +78,8 @@
 
         var content = options.content || '';
         var title = options.title || '';
-        var yes_callback = options.yes;
-        var no_callback = options.no;
+        var yes_callback = options.yes || pass;
+        var no_callback = options.no || pass;
         var optionsOverride = options.optionsOverride || {};
 
         //修正content的内容
@@ -95,6 +95,8 @@
           optionsOverride: optionsOverride
         }, [yes_callback, no_callback]);
       }
+
+      function pass() {} //do nothing
 
       function notify_confirm(map, callbacks) {
         var options = getOptions();
