@@ -4,18 +4,23 @@
 + 目录说明
   - toastr目录存放了toastr源码 https://github.com/CodeSeven/toastr
   - matrixToastr 存放了基于toastr源码进行二次开发的代码
-  - demo.html,index.js 是demot文件
+  - demo.html,index.js 是demo文件
 ### API
 + 主要接口有
   - matrixToastr.confirm
   - matrixToastr.info
   - matrixToastr.error
   - matrixToastr.warning
-  - matrixToastr.success
-  - matrixToastr.setOptions
+  - matrixToastr.success    
+  - matrixToastr.setOptions //设置toastr的一些预参数
 + 具体使用  
   - 示例
     ``` javascript
+    matrixToastr.setOptions({
+      'newestOnTop': true,
+      'closeButton' : true,
+      'closeDuration' : 100      
+    });
     matrxiToastr.confirm({
       content: content,
       title: title, //可选
