@@ -20,13 +20,13 @@
       title: title, //可选
       yes: function() {}, //点击确认的回调函数
       no: function() {},
-      options: options
+      optionsOverride: options
     });
     matrixToastr.info({
       content: content,
       title: title,
       callback: callback,
-      options: options
+      optionsOverride: options
     });
     ```
   - 其他与info一样
