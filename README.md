@@ -21,6 +21,8 @@
       'closeButton' : true,
       'closeDuration' : 100      
     });
+
+
     matrxiToastr.confirm({
       content: content, //显示内容
       title: title, //可选，标题
@@ -28,9 +30,11 @@
       no: function() {},  //点击“否”的回调函数;默认是空函数，不做任何操作；
       optionsOverride: options //参数设置
     });
+
+
     matrixToastr.info({
-      content: content,
-      title: title,
+      content: content,  //显示内容
+      title: title,      //显示标题；可选
       callback: callback,  //可选；用于在调用info之后采取的回调函数
       optionsOverride: options
     });
