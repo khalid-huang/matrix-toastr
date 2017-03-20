@@ -7,10 +7,15 @@
         success: success,
         error: error,
         confirm:confirm,
+        setOptions: setOptions
       };
 
       return matrixToastr;
       // window.matrixToastr = matrixToastr;
+
+      function setOptions(options) {
+        toastr.options = options;
+      }
 
       function info(options) {
         var content = options.content || '';

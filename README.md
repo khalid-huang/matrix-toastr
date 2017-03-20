@@ -12,6 +12,7 @@
   - matrixToastr.error
   - matrixToastr.warning
   - matrixToastr.success
+  - matrixToastr.setOptions
 + 具体使用  
   - 示例
     ``` javascript
