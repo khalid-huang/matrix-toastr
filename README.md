@@ -12,7 +12,7 @@
   - matrixToastr.error
   - matrixToastr.warning
   - matrixToastr.success    
-  - matrixToastr.setOptions //设置toastr的一些预参数
+  - matrixToastr.setOptions //预先设置toastr的一些参数
 + 具体使用  
   - 示例
     ``` javascript
