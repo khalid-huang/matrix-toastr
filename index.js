@@ -1,3 +1,7 @@
+matrixToastr.setOptions({
+  closeButton: true
+})
+
 var test = function() {
   matrixToastr.info({
     content: 'i am young2'
